@@ -63,7 +63,7 @@ model.fit(X_trn, y_trn)
 yhat_cb = model.predict(X_tst)
 
 # Save predictions in required format
-submission = pd.DataFrame({'yhat': yhat_cb})
+submission = pd.DataFrame({'outcome': yhat_cb})
 submission.to_csv('CW1_submission_K22015880.csv', index=False)  # Replace KNUMBER with your ID
 
 print("Submission file created successfully!")
