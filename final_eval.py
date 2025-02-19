@@ -66,3 +66,4 @@ yhat_cb = model.predict(X_tst)
 submission = pd.DataFrame({'yhat': yhat_cb})
 submission.to_csv('CW1_submission_K22015880.csv', index=False)  # Replace KNUMBER with your ID
 
+print("Submission file created successfully!")
